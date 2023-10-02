@@ -1,0 +1,64 @@
+{
+    "name": "ecommerce-application",
+    "version": "1.0.0",
+    "description": "The final task is eCommerce-application for JavaScript/Front-end 2023Q1",
+    "main": "index.ts",
+    "scripts": {
+        "test": "jest",
+        "lint": "eslint . --ext .js,.ts && prettier --check . & tsc --noEmit",
+        "lint:fix": "eslint . --ext .js,.ts && prettier --write .",
+        "style": "sass --watch src/styles/style.scss src/styles/style.css",
+        "build": "webpack build --node-env production",
+        "dev": "webpack serve --open",
+        "prepare": "husky install"
+    },
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "author": "Galiia-GR, Vladislav Shkvarun, GregoryRubies",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/"
+    },
+    "homepage": "https://github.com/",
+    "devDependencies": {
+        "@types/jest": "^29.5.2",
+        "@typescript-eslint/eslint-plugin": "^5.59.11",
+        "@typescript-eslint/parser": "^5.59.11",
+        "clean-webpack-plugin": "^4.0.0",
+        "css-loader": "^6.8.1",
+        "css-minimizer-webpack-plugin": "^5.0.1",
+        "eslint": "^8.43.0",
+        "eslint-config-airbnb-base": "^15.0.0",
+        "eslint-config-airbnb-typescript": "^17.0.0",
+        "eslint-config-prettier": "^8.8.0",
+        "eslint-plugin-import": "^2.27.5",
+        "eslint-plugin-prettier": "^3.4.1",
+        "eslint-webpack-plugin": "^4.0.1",
+        "file-loader": "^6.2.0",
+        "html-loader": "^4.2.0",
+        "html-webpack-plugin": "^5.5.3",
+        "husky": "^8.0.3",
+        "jest": "^29.6.1",
+        "jest-environment-jsdom": "^29.6.1",
+        "lint-staged": "^13.2.3",
+        "mini-css-extract-plugin": "^2.7.6",
+        "prettier": "^2.8.8",
+        "sass": "^1.63.4",
+        "sass-loader": "^13.3.2",
+        "style-loader": "^3.3.3",
+        "ts-jest": "^29.1.1",
+        "ts-loader": "^9.4.3",
+        "webpack": "^5.87.0",
+        "webpack-cli": "^5.1.4",
+        "webpack-dev-server": "^4.15.1"
+    },
+    "lint-staged": {
+        "*{js,ts}": [
+            "eslint --cache --fix --ext .js,.ts",
+            "prettier --write"
+        ],
+        "*.{css,md,yml,htm}": "prettier --write"
+    }
+}
