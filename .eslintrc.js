@@ -12,7 +12,6 @@ module.exports = {
     },
     rules: {
         '@typescript-eslint/no-var-requires': 'off',
-        '@typescript-eslint/no-explicit-any': 2,
         'no-restricted-globals': 'off',
         'no-undef': 'off',
         'no-use-before-define': 'off',

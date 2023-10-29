@@ -2,18 +2,50 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, user-scalable=no" />
+        <script src="index.ts"></script>
+        <title>Rivest Pool</title>
+        <link rel="icon" href="assets/img/favicon2.png">
     </head>
     <body>
-        <header>
-            <div class="header__logo"></div>
+        <header id="head">
+            <div class="header_container">
+                <a href="/#/">
+                    <div class="header__logo"></div>
+                </a>
             <nav>
-                <div class="naw__button">HOME</div>
-                <div class="naw__button">PRIVACY</div>
-                <div class="naw__button">ABOUT US</div>
-                <div class="naw__button">CONTACTS</div>
-                <div class="naw__button">SERVICE</div>
+                <a class="naw__button active" id="HOME">HOME</a>
+                <a class="naw__button" id="PISCINE">PISCINE ACQUA SPORT 
+                    <div class="bottom-arrow"></div>
+                    <div class="header__list">
+                        <div class="naw__el" id="RESIDENZIALI">Piscine Residenziali</div>
+                        <div class="naw__el" id="SPORTIVE">Piscine Sportive</div>
+                        <div class="naw__el" id="RICETTIVE">Piscine per Strutture Ricettive</div>
+                        <div class="naw__el" id="SFIORO">Piscine a Sfioro</div>
+                        <div class="naw__el" id="SKIMMER">Piscine a Skimmer</div>
+                        <div class="naw__el" id="TERRA">Piscine Fuori Terra</div>
+                        <div class="naw__el" id="ORNAMENTALI">Fontane Danzanti e Ornamentali</div>
+                        <div class="naw__el" id="CENTRI">Centri Benessere</div>
+                    </div>
+                </a>
+                <a class="naw__button">ABOUT US</a>
+                <a class="naw__button" id="SERVICE">SERVICE
+                    <div class="bottom-arrow"></div>
+                    <div class="header__list2">
+                        <div class="naw__el" id="MESSA">Messa a Norma Piscina</div>
+                        <div class="naw__el" id="MANUT">Manutenzione Piscina</div>
+                        <div class="naw__el" id="EVOL">Pool Evolution Magazine</div>
+                    </div>
+                </a>
+                <a class="naw__button" href="#contactUs">CONTACTS</a>
+                <a class="naw__button" id="PRIVACY">PRIVACY</a>
             </nav>
+            </div>
+            <div class="menu-logo">
+                <span class="stick1"></span>
+                <span class="stick2"></span>
+                <span class="stick3"></span>
+            </div>
         </header>
         <main>
             <div class="main">
@@ -23,5 +55,20 @@
                 </div>
             </div>
         </main>
+        <a href="https://wa.me/+393895885313" class="whatsappLogo">
+            <div class="whatsText"></div>
+            <div class="whatsLogo"></div>
+        </a>
+        <a href="#head">
+            <div class="upLogo">
+            </div>
+        </a>
+        <input type="hidden" name="project_name" value="Rivest pool">
+		<input type="hidden" name="admin_email" value="vladik.sh1978@gmail.com">
+		<input type="hidden" name="form_subject" value="Form Subject">
+        <footer>
+            <div class="footer__img"></div>
+            <p>Acqua Sport è un marchio di AS Group Srl<br>Via Brodolini 7 – 50063 Figline e Incisa Valdarno Firenze – Italia<br>Tel. (+39) 055 953606  acquasport@acquasport.biz<br>P. IVA 05272290486</p>
+        </footer>
     </body>
 </html>
