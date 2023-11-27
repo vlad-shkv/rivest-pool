@@ -1,4 +1,5 @@
 /* eslint-disable prefer-arrow-callback */
+
 let logoFirst = document.createElement('div') as HTMLElement;
 logoFirst.classList.add('main__logo1');
 let logoSecond = document.createElement('div') as HTMLElement;
@@ -9,11 +10,13 @@ let buttons = document.querySelectorAll('.naw__button');
 let homeButton = document.querySelector('#HOME');
 let homeTitle = document.createElement('h3');
 homeTitle.classList.add('main__title');
-homeTitle.textContent =
-    'Piscine a Sfioro - Piscine a Skimmer - Piscine Fuori Terra - Fontane Danzanti - Domotica in Piscina';
+homeTitle.textContent = 'Creiamo e curiamo la tua piscina come fosse la nostra piscina';
 let homeMainButton = document.createElement('div');
 homeMainButton.classList.add('main__button');
 homeMainButton.textContent = 'CHIEDI UN PREVENTIVO';
+homeMainButton.addEventListener('click', () => {
+    location.href = '#contactUs';
+});
 let logoUp = document.querySelector('.upLogo') as HTMLElement;
 
 let socialContainer = document.createElement('div');
@@ -172,6 +175,9 @@ export function goHome() {
         el.classList.remove('active');
     });
     homeButton?.classList.add('active');
+    main.classList.remove('back-none');
+    main.style.paddingTop = '75px';
+    window.scrollTo(0, 0);
 }
 
 let whatsText = document.querySelector('.whatsText') as HTMLElement;
@@ -295,7 +301,7 @@ let active = false;
 
 document.addEventListener('click', (target) => {
     if (active === true) {
-        if (!(target.target as HTMLElement).classList.contains('naw__button')) {
+        if (!(target.target as HTMLElement).classList.contains('active-button')) {
             let nav = document.querySelector('nav') as HTMLElement;
             nav.style.right = '-300px';
             menuButton.style.right = '13px';
